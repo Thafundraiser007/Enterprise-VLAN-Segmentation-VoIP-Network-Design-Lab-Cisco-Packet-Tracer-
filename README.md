@@ -1,13 +1,12 @@
-# Enterprise-VLAN-Segmentation-VoIP-Network-Design-Lab-Cisco-Packet-Tracer-
-Enterprise network simulation featuring VLAN segmentation, inter-VLAN routing, DHCP services, and VoIP integration. Designed to replicate a real-world hospital-style infrastructure with isolated data, voice, and server networks.
-
 # 🏢 Enterprise VLAN Segmentation & VoIP Network Design Lab
+
+![Network Topology](https://github.com/user-attachments/assets/88bab0e4-eb1b-41b6-b833-898d59cd8811)
 
 ## 📌 Project Overview
 
-This project is an enterprise-style network simulation built using Cisco Packet Tracer. It models a real-world hospital-inspired infrastructure with logically separated networks for data, voice, and servers.
+This project is an enterprise-style network simulation built using Cisco Packet Tracer. It models a hospital-inspired infrastructure with logically segmented networks for data, voice, and server services.
 
-The design focuses on scalability, segmentation, and service reliability using VLANs, inter-VLAN routing, DHCP, and VoIP integration.
+The design focuses on scalability, security, and service reliability using VLAN segmentation, inter-VLAN routing, DHCP, and VoIP integration.
 
 All IP addressing schemes, VLAN IDs, and physical layout have been modified for lab and documentation purposes.
 
@@ -15,22 +14,22 @@ All IP addressing schemes, VLAN IDs, and physical layout have been modified for 
 
 ## 🧠 Network Architecture
 
-The network is segmented into three primary VLANs:
+The network is segmented into three VLANs:
 
 ### 🔹 VLAN 10 – Data Network
-- Used for end-user devices (PCs, workstations)
+- End-user devices (PCs, workstations)
 - Subnet: `192.168.10.0/24`
 - Gateway: `192.168.10.1`
-- DHCP assigned to clients
+- DHCP assigned
 
 ### 🔹 VLAN 20 – Voice Network
-- Used for IP telephony (VoIP devices)
+- IP telephony devices (VoIP)
 - Subnet: `192.168.20.0/24`
 - Gateway: `192.168.20.1`
-- IP phones registered and functional via Call Manager configuration
+- Call Manager Express (CME) enabled
 
 ### 🔹 VLAN 30 – Server Network
-- Hosts internal services such as DHCP and network infrastructure services
+- Internal services (DHCP and network services)
 - Subnet: `192.168.30.0/24`
 - Gateway: `192.168.30.1`
 
@@ -39,67 +38,65 @@ The network is segmented into three primary VLANs:
 ## 🔧 Core Features Implemented
 
 - VLAN segmentation for traffic isolation and security
-- IEEE 802.1Q trunk links between switches and router
+- IEEE 802.1Q trunking between switches and router
 - Router-on-a-Stick inter-VLAN routing
-- DHCP services for automatic IP allocation (VLAN 10 clients)
-- VoIP configuration with working IP phone registration
-- Call Manager Express (CM) integration for voice services
-- Centralized server network for service management
-- Separation of data and voice traffic for performance optimization
+- DHCP services for automatic IP assignment (VLAN 10)
+- VoIP configuration with IP phone registration
+- Call Manager Express (CME) integration
+- Centralized server-based network services
 
 ---
 
-## 📡 Network Behavior & Traffic Flow
+## 📡 Network Behavior
 
-- End devices in VLAN 10 automatically receive IP addresses via DHCP
-- IP phones in VLAN 20 obtain network configuration and register to Call Manager services
-- VLAN 30 hosts centralized infrastructure services
+- VLAN 10 devices receive IP addresses via DHCP
+- VLAN 20 IP phones register with Call Manager services
+- VLAN 30 provides internal network services
 - Inter-VLAN routing enables controlled communication between segments
-- Voice traffic is logically isolated to ensure call stability and reduced congestion
+- Voice traffic is isolated for performance and reliability
 
 ---
 
-## 🛠 Technologies & Protocols Used
+## 🛠 Technologies Used
 
 - Cisco Packet Tracer
-- VLANs (IEEE 802.1Q)
+- VLANs (802.1Q)
 - Router-on-a-Stick Inter-VLAN Routing
 - DHCP (Dynamic Host Configuration Protocol)
 - VoIP / IP Telephony
-- Cisco Call Manager Express (CM)
-- Layer 2 & Layer 3 switching concepts
-
----
-
-## 🎯 Key Skills Demonstrated
-
-This project demonstrates practical understanding of:
-
-- Enterprise network design principles
-- VLAN segmentation and traffic isolation
-- Inter-VLAN routing architecture
-- DHCP scope configuration and management
-- VoIP deployment in enterprise environments
-- Network troubleshooting and service validation
-- Scalable infrastructure design
+- Cisco Call Manager Express (CME)
 
 ---
 
 ## 📁 Repository Contents
 
-- Toplogy (`.pkt`)
-- Network documentation (this README)
-- Screenshots in folder
-- video representaion of data travel
+- Packet Tracer topology file (`.pkt`)
+- Screenshots folder (network validation & testing)
+- Video demonstration of packet/data flow
+- README documentation
 
 ---
 
-## 🚀 Future Enhancements
+## 🎯 Key Skills Demonstrated
 
-- Implement Access Control Lists (ACLs) for tighter security policies
-- Add redundancy using HSRP or VRRP
-- Introduce wireless VLAN integration
-- Expand VoIP system with multiple departments or sites
+- Enterprise network design
+- VLAN segmentation and traffic isolation
+- Inter-VLAN routing architecture
+- DHCP configuration and management
+- VoIP deployment and troubleshooting
+- Network validation and testing
 
-Author:
+---
+
+## 🚀 Future Improvements
+
+- Implement ACL-based security policies
+- Add redundancy (HSRP/VRRP)
+- Expand wireless VLAN integration
+- Multi-site VoIP expansion
+- Network monitoring (SNMP/syslog simulation)
+
+---
+
+## 👤 Author
 Jamill Naipao
